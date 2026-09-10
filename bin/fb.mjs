@@ -314,7 +314,7 @@ async function cmdDoctor(cfg) {
   const s = await bridge.status();
   const pid = bridge.daemonRunning();
   console.log(ok(!!pid || s.ok) + ' daemon      ' + (pid ? 'pid ' + pid : (s.ok ? 'running (started outside fb)' : 'not running — `fb up`')));
-  console.log(ok(!!s.connected) + ' plugin link ' + (s.connected ? 'connected on ws ' + s.wsPort : 'not connected — launch it in Figma'));
+  console.log(ok(!!s.connected) + ' plugin link ' + (s.connected ? 'connected' + (s.wsPort ? ' on ws ' + s.wsPort : '') : 'not connected — launch it in Figma'));
   console.log(ok(!!cfg._path) + ' project     ' + (cfg._path || 'no figbridge.json — `fb init`'));
   console.log('     autostart   ' + (autostartStatus() ? 'on' : 'off  (`fb autostart on`)'));
   console.log('     log         ' + LOG_FILE);
