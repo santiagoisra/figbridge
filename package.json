@@ -1,0 +1,29 @@
+{
+  "name": "figbridge",
+  "version": "1.0.0",
+  "description": "Local bridge that lets any AI agent read from and write to Figma Desktop, with programmatic QA. No API key, no plan limits, macOS and Windows.",
+  "type": "module",
+  "bin": {
+    "fb": "bin/fb.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "src",
+    "jobs",
+    "templates",
+    "plugin"
+  ],
+  "keywords": [
+    "figma",
+    "mcp",
+    "agent",
+    "design-system",
+    "plugin-api",
+    "lint"
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}
