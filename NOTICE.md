@@ -3,8 +3,8 @@
 ## Figma Desktop Bridge (`plugin/`)
 
 The Figma development plugin bundled in `plugin/` is **Figma Desktop Bridge**, taken
-unmodified from the [figma-console-mcp](https://github.com/southleft/figma-console-mcp)
-project.
+unmodified from [figma-console-mcp](https://github.com/southleft/figma-console-mcp), a project
+by **[Southleft](https://southleft.com)**.
 
     MIT License
     Copyright (c) 2025 Figma Console MCP Contributors

@@ -19,6 +19,23 @@ fb lint 14:2687              # QA against your own design tokens
 
 ---
 
+## Credit where it belongs
+
+**The Figma side of this is not my work.** figbridge bundles
+**[Figma Desktop Bridge](https://github.com/southleft/figma-console-mcp/tree/main/figma-desktop-bridge)**,
+the development plugin from **[figma-console-mcp](https://github.com/southleft/figma-console-mcp)**
+by **[Southleft](https://southleft.com)** — MIT licensed, copied here unmodified (`plugin/`) so
+that installing stays a double-click. That plugin is the piece that actually reaches inside
+Figma. Without it there is no bridge, and this project would not exist.
+
+What figbridge adds on top: its own server for that plugin's WebSocket protocol, the `fb` CLI,
+the snapshot/diff safety net, the token-driven linter, the MCP server and the installers.
+
+If you want the plugin's cloud relay, its browser-console tooling or its own MCP server — it
+does considerably more than what figbridge uses — go to the upstream project. Give it the star.
+
+---
+
 ## Why it exists
 
 Agents are good at writing Figma Plugin API code and bad at knowing whether it worked.
@@ -210,7 +227,8 @@ agent loose on work you care about. `fb diff` exists precisely because agents ge
 
 MIT — see [LICENSE](LICENSE).
 
-The bundled Figma plugin in [`plugin/`](plugin/) is **Figma Desktop Bridge** from the
-[figma-console-mcp](https://github.com/southleft/figma-console-mcp) project, MIT licensed,
-redistributed here unmodified so the install can be a single double-click. See
-[NOTICE.md](NOTICE.md). All the credit for the plugin side belongs to its authors.
+The bundled Figma plugin in [`plugin/`](plugin/) is **Figma Desktop Bridge** from
+[figma-console-mcp](https://github.com/southleft/figma-console-mcp) by
+[Southleft](https://southleft.com), MIT licensed, redistributed here unmodified so the install
+can be a single double-click. Its license ships with it in [`plugin/LICENSE`](plugin/LICENSE),
+and the details are in [NOTICE.md](NOTICE.md). All the credit for the plugin side is theirs.
